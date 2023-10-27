@@ -1,6 +1,6 @@
 if(document.querySelector(".g-recaptcha"))
 {
-    Object.assign(document.querySelector(".g-recaptcha").style,{"position":"absolute","right":"15vw"});
+    Object.assign(document.querySelector(".g-recaptcha").style,{"position":"absolute","left":"20vw","bottom":"2vh"});
 }
 let BlockIndexValue = 0;
 const topTool = document.createElement("div");
