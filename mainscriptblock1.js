@@ -1,3 +1,4 @@
+alert("script loading....);
 if(document.querySelector(".g-recaptcha"))
 {
     Object.assign(document.querySelector(".g-recaptcha").style,{"position":"absolute","left":"10vw","margin-top":"12em","z-index":"10000"});
@@ -68,11 +69,15 @@ loadBlock.addEventListener("click",
                     document.querySelector("#fullname"),
                     document.querySelector("input[name='fullname'")];
                 const ElementFullName = QueryListFullName.find((element)=> {
-                    element !== null; return element
+                    if(element !== null;) {
+                        if (element.attributes.value !== Textfullname) {
+                    element.removeAttribute("value");
+                    element.setAttribute("value", Textfullname);
+                            return element;
+                        }
+                    }
                 });
-                if (ElementFullName.getAttribute("value") !== Textfullname) {
-                    ElementFullName.setAttribute("value", Textfullname);
-                }
+                
 
             }
 
