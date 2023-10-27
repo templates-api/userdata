@@ -1,3 +1,7 @@
+if(document.querySelector(".g-recaptcha"))
+{
+    Object.assign(document.querySelector(".g-recaptcha").style,{"position":"absolute","right":"15vw"});
+}
 let BlockIndexValue = 0;
 const topTool = document.createElement("div");
 Object.assign(topTool.style, {
