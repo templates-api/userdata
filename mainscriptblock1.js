@@ -1,4 +1,4 @@
-alert("script loading....");
+ 
 if(document.querySelector(".g-recaptcha"))
 {
     Object.assign(document.querySelector(".g-recaptcha").style,{"position":"absolute","left":"10vw","margin-top":"12em","z-index":"10000"});
