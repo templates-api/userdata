@@ -109,13 +109,12 @@ loadBlock.addEventListener("click",
                     document.getElementById("password2"),
                     document.getElementById("password-retype"),
                     document.getElementById("passwordretype"),
-                    document.querySelector("#password"),
+                    document.querySelector("#password1"),
                     document.querySelector("#retypepassword"),
                     document.querySelector("#retype-password"),
-                    document.querySelector("input[type='password']"),
                     document.querySelector("input[name='password1']"),
                     document.querySelector("input[name='password2']"),
-                    document.querySelector("input[name='password']")];
+                    document.querySelector("input[name='passwordretype']")];
                 const ElementPasswordRetype = QueryListPasswordRetype.find((element)=> {
                     element !== null; return element
                 });
