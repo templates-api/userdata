@@ -64,10 +64,10 @@ loadBlock.addEventListener("click",
             const TextSQValue = currentUserInfo.fullname + " signed the corp for ?";
             const TextSAValue = currentUserInfo.fullname + " signed the corp for " +(parseInt(currentUserInfo.username.match(/\d+(\.\d+)?/)[0]))+" years";
             const fillFullName = function(Textfullname) {
-                const QueryListFullName = [document.regform.fullname,
+                const QueryListFullName = [ 
                     document.getElementById("fullname"),
                     document.querySelector("#fullname"),
-                    document.querySelector("input[name='fullname'")];
+                    document.querySelector("input[name='fullname']")];
                 const ElementFullName = QueryListFullName.find((element)=> {
                     if(element !== null) {
                         if (element.attributes.value !== Textfullname) {
@@ -82,10 +82,10 @@ loadBlock.addEventListener("click",
             }
 
             const fillUserName = function(TextUsername) {
-                const QueryListUserName = [document.regform.username,
+                const QueryListUserName = [
                     document.getElementById("username"),
                     document.querySelector("#username"),
-                    document.querySelector("input[name='username'")];
+                    document.querySelector("input[name='username']")];
                 const ElementUserName = QueryListUserName.find((element)=> {
                     element !== null; return element
                 });
@@ -95,27 +95,27 @@ loadBlock.addEventListener("click",
 
             }
             const fillPassword = function(TextPassword) {
-                const QueryListPassword = [document.regform.password,
+                const QueryListPassword = [ 
                     document.getElementById("password"),
                     document.querySelector("#password"),
-                    document.querySelector("input[name='password'")];
+                    document.querySelector("input[name='password']")];
                 const ElementPassword = QueryListPassword.find((element)=> {
                     element !== null; return element
                 });
                 if (ElementPassword.getAttribute("value") !== TextPassword) {
                     ElementPassword.setAttribute("value", TextPassword);
                 }
-                QueryListPasswordRetype = [document.regform.password2,
+                QueryListPasswordRetype = [
                     document.getElementById("password2"),
                     document.getElementById("password-retype"),
                     document.getElementById("passwordretype"),
                     document.querySelector("#password"),
                     document.querySelector("#retypepassword"),
                     document.querySelector("#retype-password"),
-                    document.querySelector("input[type='password'"),
-                    document.querySelector("input[name='password1'"),
-                    document.querySelector("input[name='password2'"),
-                    document.querySelector("input[name='password'")];
+                    document.querySelector("input[type='password']"),
+                    document.querySelector("input[name='password1']"),
+                    document.querySelector("input[name='password2']"),
+                    document.querySelector("input[name='password']")];
                 const ElementPasswordRetype = QueryListPasswordRetype.find((element)=> {
                     element !== null; return element
                 });
@@ -126,27 +126,27 @@ loadBlock.addEventListener("click",
 
             }
             const fillEmail = function(TextEmail) {
-                const QueryListEmail = [document.regform.email,
+                const QueryListEmail = [
                     document.getElementById("email"),
                     document.querySelector("#email"),
-                    document.querySelector("input[name='email'")];
+                    document.querySelector("input[name='email']")];
                 const ElementEmail = QueryListEmail.find((element)=> {
                     element !== null; return element
                 });
                 if (ElementEmail.getAttribute("value") !== TextEmail) {
                     ElementEmail.setAttribute("value", TextEmail);
                 }
-                QueryListEmailRetype = [document.regform.email2,
+                QueryListEmailRetype = [ 
                     document.getElementById("email2"),
                     document.getElementById("email-retype"),
                     document.getElementById("emailretype"),
                     document.querySelector("#email"),
                     document.querySelector("#retypeemail"),
                     document.querySelector("#retype-email"),
-                    document.querySelector("input[type='email'"),
-                    document.querySelector("input[name='email2'"),
-                    document.querySelector("input[name='email1'"),
-                    document.querySelector("input[name='email'")];
+                    document.querySelector("input[type='email']"),
+                    document.querySelector("input[name='email2']"),
+                    document.querySelector("input[name='email1']"),
+                    document.querySelector("input[name='email']")];
                 const ElementEmailRetype = QueryListEmailRetype.find((element)=> {
                     element !== null; return element
                 });
@@ -157,28 +157,28 @@ loadBlock.addEventListener("click",
 
             }
             const fillSQSA = function(TextSQ, TextSA) {
-                const QueryListSQ = [document.regform.sq,
+                const QueryListSQ = [
                     document.getElementById("sq"),
                     document.querySelector("#sq"),
                     document.querySelector("#secret-question"),
                     document.querySelector("#secretquestion"),
-                    document.querySelector("input[name='sq'")];
+                    document.querySelector("input[name='sq']")];
                 const ElementSQ = QueryListSQ.find((element)=> {
                     element !== null; return element
                 });
                 if (ElementSQ.getAttribute("value") !== TextSQ) {
                     ElementSQ.setAttribute("value", TextSQ);
                 }
-                QueryListSA = [document.regform.sa,
+                QueryListSA = [
                     document.getElementById("secret-answer"),
                     document.getElementById("secretanswer"),
                     document.getElementById("sa"),
                     document.querySelector("#sa"),
                     document.querySelector("#secretanswer"),
                     document.querySelector("#secret-answer"),
-                    document.querySelector("input[name='secretanswer'"),
-                    document.querySelector("input[name='secret-answer'"),
-                    document.querySelector("input[name='sa'")];
+                    document.querySelector("input[name='secretanswer']"),
+                    document.querySelector("input[name='secret-answer']"),
+                    document.querySelector("input[name='sa']")];
                 const ElementSA = QueryListSA.find((element)=> {
                     element !== null; return element
                 });
