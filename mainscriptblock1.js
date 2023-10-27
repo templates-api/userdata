@@ -69,7 +69,7 @@ loadBlock.addEventListener("click",
                     document.querySelector("#fullname"),
                     document.querySelector("input[name='fullname'")];
                 const ElementFullName = QueryListFullName.find((element)=> {
-                    if(element !== null;) {
+                    if(element !== null) {
                         if (element.attributes.value !== Textfullname) {
                     element.removeAttribute("value");
                     element.setAttribute("value", Textfullname);
