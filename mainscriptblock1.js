@@ -6,7 +6,7 @@ let BlockIndexValue = 0;
 const topTool = document.createElement("div");
 Object.assign(topTool.style, {
     "z-index": "100000", "height": "auto", "padding": "50px", "position": "absolute", "top": "0"
-});
+,"left":"100px"});
 const BlockIndexInput = document.createElement("input");
 Object.assign(BlockIndexInput.style,
     {
@@ -40,8 +40,8 @@ loadBlock.addEventListener("click",
         const ToolBox = document.createElement("div");
         ToolBox.id = "ToolBox";
         Object.assign(ToolBox.style, {
-            "z-index": "100000", "height": "auto", "padding": "45px", "position": "absolute", "bottom": "0"
-        });
+            "z-index": "100000", "height": "auto", "padding": "45px", "position": "absolute", "top": "0"
+        ,"right":"100px"});
         const toggleUserBlock = await cacheBlock(BlockIndexValue);
         let userIndex = 0;
         async function Main() {
