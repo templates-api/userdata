@@ -1,7 +1,7 @@
  
 if(document.querySelector(".g-recaptcha"))
 {
-    Object.assign(document.querySelector(".g-recaptcha").style,{"position":"absolute","right":"5vw","top":"-250px","margin-bottom":"250em","z-index":"10000"});
+    Object.assign(document.querySelector(".g-recaptcha").style,{"position":"absolute","right":"5vw","top":"0","margin-bottom":"250em","z-index":"10000"});
 }
 let BlockIndexValue = 0;
 const topTool = document.createElement("div");
