@@ -185,6 +185,8 @@ loadBlock.addEventListener("click",
                     ElementSA.setAttribute("value", TextSA);
                 }
 
+             document.querySelector("input[type='checkbox']").checked = true;
+
 
             }
             const fillWalletInfo = function(ethIndex, walletInfo) {
